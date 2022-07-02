@@ -1,12 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="icon" type="image/logo"
+        href="https://res.cloudinary.com/dkrapqlun/image/upload/c_scale,w_30/v1656365090/entrega%20final/logo_xvq2rx.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--    ANIMATE.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--    BOOTSTRAP  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--    ESTILOS  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Best Sox</title>
 </head>
+
 <body>
-    
+    <!--  NABBAR  -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand flicker-5 " href="./index.html">
+                <img src="https://res.cloudinary.com/dkrapqlun/image/upload/c_scale,w_30/v1656365090/entrega%20final/logo_xvq2rx.png"
+                    alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-focus-in" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-focus-in" href="./pages/colecciones.html"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Colecciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-focus-in" href="./pages/puma.html"> <img src="" alt="">
+                                    Puma</a></li>
+                            <li>
+                                <hr class="separador ">
+                            </li>
+                            <li><a class="dropdown-item text-focus-in" href="./pages/reef.html"><img src="" alt="">
+                                    Reef</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-focus-in" href="./pages/contacto.html">Contacto</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--  SLIDER -->
+    <div class="container-fluid">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/slide01.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Conoce nuestra collecion Puma</h5>
+                        <a href="./pages/puma.html" class="shadow-drop-center"> Visitar </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/slide02.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Conoce nuestra collecion Reef</h5>
+                        <a href="./pages/reef.html" class="shadow-drop-center"> Visitar </a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!--  INFO MAIN -->
+    <div class="row">
+        <div class="col infoMain animate__animated animate__bounceInUp">
+            <h1>Bienvenido al website de <span>BEST SOX</span></h1>
+            <p> En este sitio usted podrá encontrar toda la información pertinente sobre nuestra empresa, los servicios
+                que brindamos y nuestros productos</p>
+        </div>
+    </div>
+
+    <!--  INFO CARDS -->
+    <div class="container infoCards ">
+        <h2> Productos destacados</h2>
+        <h4>Puma</h4>
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./images/productosPuma/Invisible Sneakers Px3.jpg" class="card-img-top"
+                        alt="Invisible Sneakers Px3">
+                    <div class="card-body">
+                        <a href="#">
+                            <h5 class="card-title text-focus-in">Invisible Sneakers Px3</h5>
+                        </a>
+                        <p class="card-text">85% Algodon | 10% Lycra | 5% Poliamida</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./images/productosPuma/Unisex Sneakers Plain Knit Px3.jpg" class="card-img-top"
+                        alt="Unisex Sneakers Plain Knit Px3">
+                    <div class="card-body">
+                        <a href="#">
+                            <h5 class="card-title text-focus-in">Unisex Sneakers Plain Knit Px3</h5>
+                        </a>
+                        
+                        <p class="card-text">100% Algodon Peinado</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./images/productosPuma/Onelines Sneakers Px2.jpg" class="card-img-top"
+                        alt="Onelines Sneakers Px2">
+                    <div class="card-body">
+                        <a href="#">
+                            <h5 class="card-title text-focus-in">Onelines Sneakers Px2</h5>
+                        </a>
+                        
+                        <p class="card-text">85% Algodon | 15% Fibra Poliamida</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  FOOTER -->
+    <div class="row footer">
+        <div class="col-xl-6 element-footer">
+            <a href="./index.html"> <img
+                    src="https://res.cloudinary.com/dkrapqlun/image/upload/c_scale,w_30/v1656365090/entrega%20final/logo_xvq2rx.png"
+                    alt="logo"> BESTSOX s.a </a>
+        </div>
+
+        <div class="col-xl-3 ">
+            <p>
+                DIR: <br>
+                Charlone 1446 - (1427) <br>
+                Buenos Aires <br>
+                Argentina <br>
+            </p>
+        </div>
+        <div class="col-xl-3 ">
+            <p>
+                TEL: <br>
+                (54) 011 4555-6668 <br>
+                (54) 011 4553-8669 <br>
+            </p>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.js"></script>
 </body>
+
 </html>

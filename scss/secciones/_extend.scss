@@ -1,0 +1,13 @@
+//extends
+%estilosParrafo{
+        color: white;
+        font-family: $fontInfo;
+        padding: 1rem;
+}
+
+//mixin
+@mixin mixinH($font, $colorHoverNav){
+    font-family: $font;
+    background-color: $colorHoverNav;
+}
+
