@@ -1,0 +1,36 @@
+.containerPuma{
+    text-align: center;
+    font-family: $font;
+    h3{
+        margin:1rem ;
+    }
+    .card-body{
+        background-color: $colorContainerPuma;
+        
+    }
+    .imgCard{
+        &:hover{
+            transform: scale(1.5);
+            transition: 3s;
+            
+        }
+    }
+}
+.containerReef{
+    text-align: center;
+    font-family: $font;
+    h3{
+        margin:1rem ;
+    }
+    .card-body{
+        background-color: $colorContainerPuma;
+        
+    }
+    .imgCard{
+        &:hover{
+            transform: scale(1.5);
+            transition: 3s;
+            
+        }
+    }
+}
