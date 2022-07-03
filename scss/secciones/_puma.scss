@@ -1,36 +1,128 @@
-.containerPuma{
+.containerPuma {
     text-align: center;
+    align-items: center;
     font-family: $font;
-    h3{
-        margin:1rem ;
+
+    h3 {
+        margin: 1rem;
     }
-    .card-body{
+
+    .card-body {
         background-color: $colorContainerPuma;
-        
+
     }
-    .imgCard{
-        &:hover{
+
+    .imgCard {
+        &:hover {
             transform: scale(1.5);
             transition: 3s;
-            
+
         }
     }
 }
-.containerReef{
+
+.containerReef {
     text-align: center;
     font-family: $font;
-    h3{
-        margin:1rem ;
+
+    h3 {
+        margin: 1rem;
     }
-    .card-body{
+
+    .card-body {
         background-color: $colorContainerPuma;
-        
+
     }
-    .imgCard{
-        &:hover{
+
+    .imgCard {
+        &:hover {
             transform: scale(1.5);
             transition: 3s;
-            
+
         }
     }
+}
+
+.card {
+    margin-left: 1rem;
+}
+
+.containerRecomendacion {
+    text-align: center;
+    background-color: $colorHoverNav;
+    font-family: $font;
+    padding: 1rem;
+
+    a {
+        text-decoration: none;
+
+        h4 {
+            color: $colorFondoNav;
+            font-weight: 400;
+            font-size: 3rem;
+        }
+    }
+
+    .imageRecomendacion {
+        img {
+            max-width: 4vw;
+            max-height: 4vh;
+        }
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+
+//animaciones
+.focus-in-expand {
+    -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+
+
+//MEDIA
+@media (max-width:576px) {
+    .imageRecomendacion {
+        img {
+            display: none;
+        }
+    }
+
 }

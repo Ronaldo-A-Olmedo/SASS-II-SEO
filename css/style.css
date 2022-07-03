@@ -65,6 +65,16 @@
   .card .card-text {
     font-family: "Montserrat Alternates", sans-serif; }
 
+.infoBot {
+  background-color: #b6b3b3;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center; }
+  .infoBot h3 {
+    font-family: "Montserrat", sans-serif;
+    background-color: #b6b3b3;
+    margin-top: 1rem; }
+
 .footer {
   background-color: #8d8b8b;
   margin-top: 1rem; }
@@ -119,7 +129,9 @@
 
 @media (max-width: 576px) {
   .card {
-    border: solid #b6b3b3; } }
+    border: solid #b6b3b3; }
+  .rowBot {
+    display: none; } }
 
 .navbar {
   background-color: #ffff; }
@@ -524,6 +536,7 @@
 
 .containerPuma {
   text-align: center;
+  align-items: center;
   font-family: "Montserrat", sans-serif; }
   .containerPuma h3 {
     margin: 1rem; }
@@ -543,6 +556,59 @@
   .containerReef .imgCard:hover {
     transform: scale(1.5);
     transition: 3s; }
+
+.card {
+  margin-left: 1rem; }
+
+.containerRecomendacion {
+  text-align: center;
+  background-color: #b6b3b3;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem; }
+  .containerRecomendacion a {
+    text-decoration: none; }
+    .containerRecomendacion a h4 {
+      color: #ffff;
+      font-weight: 400;
+      font-size: 3rem; }
+  .containerRecomendacion .imageRecomendacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .containerRecomendacion .imageRecomendacion img {
+      max-width: 4vw;
+      max-height: 4vh; }
+
+.focus-in-expand {
+  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@media (max-width: 576px) {
+  .imageRecomendacion img {
+    display: none; } }
 
 .containerForm {
   text-align: center; }

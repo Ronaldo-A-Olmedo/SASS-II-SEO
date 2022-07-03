@@ -17,9 +17,10 @@
     }
 }
 
-.sliderColor{
+.sliderColor {
     background-color: $colorHoverNav;
 }
+
 //info main
 
 .infoMain {
@@ -27,7 +28,8 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
-    a{
+
+    a {
         color: $colorFondoNav;
         text-decoration: none
     }
@@ -35,20 +37,23 @@
     h1 {
         @include mixinH($font, $colorHoverNav)
     }
-    span{
+
+    span {
         font-weight: bold;
     }
+
     p {
         font-family: $font;
     }
 }
+
 
 //CARDS
 .infoCards {
     text-align: center;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    
+
 
     h2 {
         @include mixinH($font, $colorFondoNav);
@@ -62,21 +67,38 @@
 
 .card {
     border: none;
-    a{
+
+    a {
         text-decoration: none;
         color: $colorFondoNav;
+
         h5 {
             @include mixinH($font, $colorHoverNav);
-            &:hover{
+
+            &:hover {
                 transform: scale(1.1);
             }
-            
+
         }
-        
+
     }
-    
+
     .card-text {
         font-family: $fontInfo;
+    }
+
+}
+
+//infobot
+.infoBot {
+    background-color: $colorHoverNav;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+
+    h3 {
+        @include mixinH($font, $colorHoverNav);
+        margin-top: 1rem;
     }
 
 }
@@ -178,5 +200,7 @@
         border: solid $colorHoverNav;
 
     }
-
+    .rowBot{
+        display: none;
+    }
 }
