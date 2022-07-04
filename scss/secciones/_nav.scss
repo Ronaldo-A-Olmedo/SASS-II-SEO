@@ -1,11 +1,11 @@
 .navbar {
     background-color: $colorFondoNav;
-
     li {
         &:hover {
             background-color: $colorHoverNav;
             
         }
+        
     }
 }
 .navbar-brand{

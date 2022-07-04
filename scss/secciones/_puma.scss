@@ -20,6 +20,33 @@
         }
     }
 }
+.ag{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    a {
+        text-decoration: none;
+
+        h4 {
+            color: $colorFondoFooter;
+            font-weight: 400;
+            font-size: 2rem;
+        }
+    }
+    .imageLogo {
+        img {
+            max-width: 4vw;
+            max-height: 2vh;
+        }
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
 
 .containerReef {
     text-align: center;

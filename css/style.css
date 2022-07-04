@@ -74,6 +74,11 @@
     font-family: "Montserrat", sans-serif;
     background-color: #b6b3b3;
     margin-top: 1rem; }
+  .infoBot h6 {
+    margin-left: 1rem;
+    font-family: "Montserrat Alternates", sans-serif;
+    background-color: #8d8b8b;
+    color: #ffff; }
 
 .footer {
   background-color: #8d8b8b;
@@ -545,6 +550,26 @@
   .containerPuma .imgCard:hover {
     transform: scale(1.5);
     transition: 3s; }
+
+.ag {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .ag a {
+    text-decoration: none; }
+    .ag a h4 {
+      color: #8d8b8b;
+      font-weight: 400;
+      font-size: 2rem; }
+  .ag .imageLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .ag .imageLogo img {
+      max-width: 4vw;
+      max-height: 2vh; }
 
 .containerReef {
   text-align: center;
