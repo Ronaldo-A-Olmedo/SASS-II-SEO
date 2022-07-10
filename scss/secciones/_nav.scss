@@ -1,5 +1,6 @@
 .navbar {
     background-color: $colorFondoNav;
+    border-bottom: solid 2px $colorFondoFooter;
     li {
         &:hover {
             background-color: $colorHoverNav;

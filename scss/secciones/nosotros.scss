@@ -1,0 +1,63 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .info {
+        margin-left: 2rem;
+        align-items: center;
+
+        p {
+            padding-top: 1rem;
+            font-family: $fontTexto;
+        }
+    }
+}
+
+.clientes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+    h3 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-family: $fontTexto;
+    }
+
+    .imgClientes{
+        padding-top: 2rem;
+    }
+
+    .licencias {
+        .infoLicencias {
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 20vw;
+                margin-top: 3rem;
+                margin-left: 3rem;
+            }
+        }
+
+
+    }
+}
+
+@media (max-width:576px) {
+    .main{
+        p{
+            text-align: center;
+            padding-right: 2rem;
+        }
+    }
+    .imgAños {
+        display: none;
+    }
+    .licencias{
+        display: none;
+    }
+
+
+}

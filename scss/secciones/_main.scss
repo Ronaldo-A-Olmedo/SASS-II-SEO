@@ -1,5 +1,5 @@
 //nav
-.imgLi{
+.imgLi {
     width: 3vw;
 }
 
@@ -33,7 +33,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
-    padding-left:2px ;
+    padding-left: 2px;
 
     a {
         color: $colorFondoNav;
@@ -72,24 +72,34 @@
         @include mixinH($font, $colorFondoNav);
         font-weight: bold;
     }
+
+    .imgReef {
+        
+        padding-left: 1rem;
+    }
 }
 
 .card {
     border: none;
     transition: 1s;
+
     &:hover {
         transform: scale(1.1);
         transition: 1s;
         border: solid 2px black;
+        // animacion  shadow-drop-center
+        -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
+
     a {
         text-decoration: none;
         color: $colorFondoNav;
 
         h5 {
             @include mixinH($font, $colorHoverNav);
-            
-            
+
+
 
         }
 
@@ -109,33 +119,36 @@
     text-align: center;
     padding-left: 3rem;
     padding-right: 3rem;
+
     h3 {
         @include mixinH($font, $colorHoverNav);
         margin-top: 1rem;
-        
+
     }
-    
-    .imgClientes{
+
+    .imgClientes {
         width: 25vw;
     }
-    
+
 }
-.rowBot{
+
+.rowBot {
     text-align: center;
-    p{
+
+    p {
         margin-left: 1rem;
         font-family: $fontTexto;
         background-color: $colorFondoFooter;
         color: $colorFondoNav;
         padding-left: 5rem;
         padding-right: 5rem;
-        
+
     }
 }
 
 //FOOTER
 .footer {
-    background-color: $colorFondoFooter;
+    background-color: rgb(43, 43, 43);
     margin-top: 1rem;
 
     a {
@@ -230,10 +243,24 @@
         border: solid $colorHoverNav;
 
     }
-    .rowBot{
+
+    .rowBot {
         display: none;
     }
-    .carousel-item img{
+
+    .carousel-item img {
         height: 25vh;
     }
+
+    .imageLogo {
+        img{
+            display: none; 
+        }
+        
+    }
+    .imgReef{
+        width: 75vw;
+        padding: 1rem;
+    }
+
 }

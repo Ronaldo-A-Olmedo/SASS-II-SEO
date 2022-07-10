@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Titillium+Web:wght@300&display=swap");
 * {
   margin: 0;
@@ -58,6 +59,8 @@
     font-family: "Montserrat", sans-serif;
     background-color: #ffff;
     font-weight: bold; }
+  .infoCards .imgReef {
+    padding-left: 1rem; }
 
 .card {
   border: none;
@@ -65,7 +68,9 @@
   .card:hover {
     transform: scale(1.1);
     transition: 1s;
-    border: solid 2px black; }
+    border: solid 2px black;
+    -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
   .card a {
     text-decoration: none;
     color: #ffff; }
@@ -100,7 +105,7 @@
     padding-right: 5rem; }
 
 .footer {
-  background-color: #8d8b8b;
+  background-color: #2b2b2b;
   margin-top: 1rem; }
   .footer a {
     text-decoration: none;
@@ -157,10 +162,16 @@
   .rowBot {
     display: none; }
   .carousel-item img {
-    height: 25vh; } }
+    height: 25vh; }
+  .imageLogo img {
+    display: none; }
+  .imgReef {
+    width: 75vw;
+    padding: 1rem; } }
 
 .navbar {
-  background-color: #ffff; }
+  background-color: #ffff;
+  border-bottom: solid 2px #8d8b8b; }
   .navbar li:hover {
     background-color: #b6b3b3; }
 
@@ -582,14 +593,15 @@
       color: #8d8b8b;
       font-weight: 400;
       font-size: 2rem; }
+      .ag a h4:hover {
+        color: #d8d1d1; }
   .ag .imageLogo {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center; }
     .ag .imageLogo img {
-      max-width: 4vw;
-      max-height: 2vh; }
+      max-width: 4vw; }
 
 .containerReef {
   text-align: center;
@@ -660,6 +672,22 @@
     filter: blur(0px);
     opacity: 1; } }
 
+@-webkit-keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35); } }
+
+@keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35); } }
+
 @media (max-width: 576px) {
   .imageRecomendacion img {
     display: none; } }
@@ -668,3 +696,41 @@
   text-align: center; }
   .containerForm h6 {
     font-family: "Montserrat", sans-serif; }
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .main .info {
+    margin-left: 2rem;
+    align-items: center; }
+    .main .info p {
+      padding-top: 1rem;
+      font-family: "Titillium Web", sans-serif; }
+
+.clientes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .clientes h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: "Titillium Web", sans-serif; }
+  .clientes .imgClientes {
+    padding-top: 2rem; }
+  .clientes .licencias .infoLicencias {
+    display: flex;
+    flex-direction: column; }
+    .clientes .licencias .infoLicencias img {
+      width: 20vw;
+      margin-top: 3rem;
+      margin-left: 3rem; }
+
+@media (max-width: 576px) {
+  .main p {
+    text-align: center;
+    padding-right: 2rem; }
+  .imgAños {
+    display: none; }
+  .licencias {
+    display: none; } }
