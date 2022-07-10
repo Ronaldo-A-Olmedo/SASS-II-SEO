@@ -2,23 +2,20 @@
     text-align: center;
     align-items: center;
     font-family: $font;
-
+    
+    
     h3 {
         margin: 1rem;
     }
 
     .card-body {
         background-color: $colorContainerPuma;
-
-    }
-
-    .imgCard {
-        &:hover {
-            transform: scale(1.5);
-            transition: 3s;
-
+        h5{
+            font-weight: bold;
         }
     }
+
+    
 }
 .ag{
     text-align: center;
@@ -52,24 +49,25 @@
     text-align: center;
     font-family: $font;
 
+
     h3 {
         margin: 1rem;
     }
 
     .card-body {
         background-color: $colorContainerPuma;
-
-    }
-
-    .imgCard {
-        &:hover {
-            transform: scale(1.5);
-            transition: 3s;
-
+        h5{
+            font-weight: bold;
         }
     }
+
+    
 }
 
+.coleccionCards{
+    justify-content: center;
+    align-items: center;
+}
 .card {
     margin-left: 1rem;
 }
@@ -87,6 +85,9 @@
             color: $colorFondoNav;
             font-weight: 400;
             font-size: 3rem;
+            &:hover{
+                color: rgb(116, 114, 114);
+            }
         }
     }
 
@@ -107,10 +108,13 @@
 
 //animaciones
 .focus-in-expand {
-    -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: focus-in-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-
+.focus-in-expand-tardio {
+    -webkit-animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
 
 @-webkit-keyframes focus-in-expand {
     0% {

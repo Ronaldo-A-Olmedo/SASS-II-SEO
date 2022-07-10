@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Titillium+Web:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0; }
@@ -7,6 +7,9 @@
   color: white;
   font-family: "Montserrat Alternates", sans-serif;
   padding: 1rem; }
+
+.imgLi {
+  width: 3vw; }
 
 .w-100 {
   height: 40vh; }
@@ -28,7 +31,8 @@
   background-color: #b6b3b3;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  text-align: center; }
+  text-align: center;
+  padding-left: 2px; }
   .infoMain a {
     color: #ffff;
     text-decoration: none; }
@@ -38,7 +42,10 @@
   .infoMain span {
     font-weight: bold; }
   .infoMain p {
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Titillium Web", sans-serif;
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 4rem; }
 
 .infoCards {
   text-align: center;
@@ -53,15 +60,18 @@
     font-weight: bold; }
 
 .card {
-  border: none; }
+  border: none;
+  transition: 1s; }
+  .card:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    border: solid 2px black; }
   .card a {
     text-decoration: none;
     color: #ffff; }
     .card a h5 {
       font-family: "Montserrat", sans-serif;
       background-color: #b6b3b3; }
-      .card a h5:hover {
-        transform: scale(1.1); }
   .card .card-text {
     font-family: "Montserrat Alternates", sans-serif; }
 
@@ -69,7 +79,9 @@
   background-color: #b6b3b3;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  text-align: center; }
+  text-align: center;
+  padding-left: 3rem;
+  padding-right: 3rem; }
   .infoBot h3 {
     font-family: "Montserrat", sans-serif;
     background-color: #b6b3b3;
@@ -79,11 +91,13 @@
 
 .rowBot {
   text-align: center; }
-  .rowBot h6 {
+  .rowBot p {
     margin-left: 1rem;
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     background-color: #8d8b8b;
-    color: #ffff; }
+    color: #ffff;
+    padding-left: 5rem;
+    padding-right: 5rem; }
 
 .footer {
   background-color: #8d8b8b;
@@ -141,7 +155,9 @@
   .card {
     border: solid #b6b3b3; }
   .rowBot {
-    display: none; } }
+    display: none; }
+  .carousel-item img {
+    height: 25vh; } }
 
 .navbar {
   background-color: #ffff; }
@@ -552,9 +568,8 @@
     margin: 1rem; }
   .containerPuma .card-body {
     background-color: #ddd6d6; }
-  .containerPuma .imgCard:hover {
-    transform: scale(1.5);
-    transition: 3s; }
+    .containerPuma .card-body h5 {
+      font-weight: bold; }
 
 .ag {
   text-align: center;
@@ -583,9 +598,12 @@
     margin: 1rem; }
   .containerReef .card-body {
     background-color: #ddd6d6; }
-  .containerReef .imgCard:hover {
-    transform: scale(1.5);
-    transition: 3s; }
+    .containerReef .card-body h5 {
+      font-weight: bold; }
+
+.coleccionCards {
+  justify-content: center;
+  align-items: center; }
 
 .card {
   margin-left: 1rem; }
@@ -601,6 +619,8 @@
       color: #ffff;
       font-weight: 400;
       font-size: 3rem; }
+      .containerRecomendacion a h4:hover {
+        color: #747272; }
   .containerRecomendacion .imageRecomendacion {
     display: flex;
     flex-direction: row;
@@ -611,8 +631,12 @@
       max-height: 4vh; }
 
 .focus-in-expand {
-  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  -webkit-animation: focus-in-expand 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-expand 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+.focus-in-expand-tardio {
+  -webkit-animation: focus-in-expand 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-expand 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
 @-webkit-keyframes focus-in-expand {
   0% {
