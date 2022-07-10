@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 
     .info {
         margin-left: 2rem;
@@ -47,16 +48,37 @@
 
 @media (max-width:576px) {
     .main{
+        max-width: 570px;
         p{
-            text-align: center;
+            text-align: left;
             padding-right: 2rem;
+        }
+        img{
+            display: none;
         }
     }
     .imgAños {
         display: none;
     }
-    .licencias{
-        display: none;
+    .clientes{
+        flex-wrap: wrap;
+        justify-content: center;
+        .infoClientes{
+            img{
+                width: 65vw;
+            }
+        }
+        .licencias{
+            padding-top: 1rem;
+            flex-direction: row;
+            align-items: center;
+            .infoLicencias{
+                flex-direction: row;
+                img{
+                    width: 35vw;
+                }
+            }
+        }
     }
 
 
