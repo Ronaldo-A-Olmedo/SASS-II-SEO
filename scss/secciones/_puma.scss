@@ -3,7 +3,6 @@
     align-items: center;
     font-family: $font;
 
-
     h3 {
         margin: 1rem;
     }
@@ -15,8 +14,6 @@
             font-weight: bold;
         }
     }
-
-
 }
 
 .ag {
@@ -42,21 +39,18 @@
     .imageLogo {
         img {
             max-width: 4vw;
-
         }
 
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-
     }
 }
 
 .containerReef {
     text-align: center;
     font-family: $font;
-
 
     h3 {
         margin: 1rem;
@@ -69,8 +63,6 @@
             font-weight: bold;
         }
     }
-
-
 }
 
 .coleccionCards {
@@ -80,7 +72,7 @@
 
 .card {
     margin-left: 1rem;
-    
+
 }
 
 .containerRecomendacion {
@@ -113,7 +105,6 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-
     }
 }
 

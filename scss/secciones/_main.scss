@@ -1,7 +1,4 @@
-//nav
-.imgLi {
-    width: 3vw;
-}
+
 
 //SLIDER
 .w-100 {
@@ -95,69 +92,25 @@
     a {
         text-decoration: none;
         color: $colorFondoNav;
-
         h5 {
             @include mixinH($font, $colorHoverNav);
-
-
-
         }
-
     }
-
     .card-text {
         font-family: $fontInfo;
     }
 
 }
 
-//infobot
-.infoBot {
-    background-color: $colorHoverNav;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
-
-    h3 {
-        @include mixinH($font, $colorHoverNav);
-        margin-top: 1rem;
-
-    }
-
-    .imgClientes {
-        width: 25vw;
-    }
-
-}
-
-.rowBot {
-    text-align: center;
-
-    p {
-        margin-left: 1rem;
-        font-family: $fontTexto;
-        background-color: $colorFondoFooter;
-        color: $colorFondoNav;
-        padding-left: 5rem;
-        padding-right: 5rem;
-
-    }
-}
-
 //FOOTER
 .footer {
     background-color: rgb(43, 43, 43);
     margin-top: 1rem;
-
     a {
-
         text-decoration: none;
         color: white;
         font-family: $font;
     }
-
     p {
         @extend %estilosParrafo;
     }
@@ -167,13 +120,10 @@
 
 
 //animaciones
-
 .shadow-drop-center {
     -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-
-
 @-webkit-keyframes shadow-drop-center {
     0% {
         -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -185,7 +135,6 @@
         box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
     }
 }
-
 @keyframes shadow-drop-center {
     0% {
         -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -198,12 +147,11 @@
     }
 }
 
+//
 .text-focus-in {
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
-
-
 @-webkit-keyframes text-focus-in {
     0% {
         -webkit-filter: blur(12px);
@@ -217,7 +165,6 @@
         opacity: 1;
     }
 }
-
 @keyframes text-focus-in {
     0% {
         -webkit-filter: blur(12px);
@@ -233,25 +180,14 @@
 }
 
 
-
-
-
-
 //MEDIA
 @media (max-width:576px) {
     .card {
         border: solid $colorHoverNav;
-
     }
-
-    .rowBot {
-        display: none;
-    }
-
     .carousel-item img {
         height: 25vh;
     }
-
     .imageLogo {
         img{
             display: none; 
@@ -262,5 +198,4 @@
         width: 75vw;
         padding: 1rem;
     }
-
 }

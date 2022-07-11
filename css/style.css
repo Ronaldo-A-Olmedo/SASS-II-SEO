@@ -9,9 +9,6 @@
   font-family: "Montserrat Alternates", sans-serif;
   padding: 1rem; }
 
-.imgLi {
-  width: 3vw; }
-
 .w-100 {
   height: 40vh; }
 
@@ -80,30 +77,6 @@
   .card .card-text {
     font-family: "Montserrat Alternates", sans-serif; }
 
-.infoBot {
-  background-color: #b6b3b3;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  text-align: center;
-  padding-left: 3rem;
-  padding-right: 3rem; }
-  .infoBot h3 {
-    font-family: "Montserrat", sans-serif;
-    background-color: #b6b3b3;
-    margin-top: 1rem; }
-  .infoBot .imgClientes {
-    width: 25vw; }
-
-.rowBot {
-  text-align: center; }
-  .rowBot p {
-    margin-left: 1rem;
-    font-family: "Titillium Web", sans-serif;
-    background-color: #8d8b8b;
-    color: #ffff;
-    padding-left: 5rem;
-    padding-right: 5rem; }
-
 .footer {
   background-color: #2b2b2b;
   margin-top: 1rem; }
@@ -159,8 +132,6 @@
 @media (max-width: 576px) {
   .card {
     border: solid #b6b3b3; }
-  .rowBot {
-    display: none; }
   .carousel-item img {
     height: 25vh; }
   .imageLogo img {
@@ -180,6 +151,8 @@
 
 .dropdown-menu {
   background-color: #ffff; }
+  .dropdown-menu .imgLi {
+    width: 3vw; }
   .dropdown-menu .dropdown-item {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400; }
