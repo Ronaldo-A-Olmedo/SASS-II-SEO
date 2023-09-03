@@ -115,10 +115,7 @@
     animation: focus-in-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.focus-in-expand-tardio {
-    -webkit-animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: focus-in-expand 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
+
 
 @-webkit-keyframes focus-in-expand {
     0% {

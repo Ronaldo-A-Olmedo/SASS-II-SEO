@@ -82,8 +82,8 @@
 
     &:hover {
         transform: scale(1.1);
-        transition: 1s;
-        border: solid 2px black;
+        transition: 3s;
+        border: solid 1.1px black;
         // animacion  shadow-drop-center
         -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -103,13 +103,24 @@
 }
 
 //FOOTER
+.rowFooter{
+    align-items: center;
+}
 .footer {
     background-color: rgb(43, 43, 43);
-    margin-top: 1rem;
+    
+    
     a {
+        margin-left: 5rem;
+        padding: 2rem;
         text-decoration: none;
         color: white;
         font-family: $font;
+        &:hover{
+            background-color: gray;
+            color: black;
+            font-weight: bold;
+        }
     }
     p {
         @extend %estilosParrafo;
